@@ -1,0 +1,86 @@
+$white: hsl(0, 0%, 100%);
+$lightGreyish: hsl(270, 3%, 87%);
+$darkGreyish: hsl(279, 6%, 55%);
+$veryDarkViolet: hsl(278, 68%, 11%);
+$red: hsl(0, 100%, 66%);
+$gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  padding-left: 30%;
+  width: 100%;
+
+  &:active{
+    color: $gradient;
+  }
+
+  .number{
+    margin-top: 1.8rem;
+  }
+
+  .expDiv{
+    margin-top: -0.2rem;
+  }
+}
+
+.input {
+  width: 460px;
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  padding-left: 15px;
+  font-size: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.nestedCard {
+  display: flex;
+  flex-direction: row;
+  .input {
+    margin-right: 0.8rem; 
+    width: 100px;
+  }
+}
+
+.cvc {
+  margin-left: 0.8rem;
+  .input {
+    width: 220px;
+  }
+}
+
+.btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  width: 460px;
+  height: 3.2rem;
+  margin-top: 0.8rem;
+  background-color: $veryDarkViolet;
+  color: $lightGreyish;
+}
+
+.errorMsg {
+  color: $red;
+}
+
+.cardFront {
+  position: absolute;
+  top: 10rem;
+  left: 9rem;
+}
+
+.cardBack {
+  position: absolute;
+  top: 30rem;
+  left: 16rem;
+}
