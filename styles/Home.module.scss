@@ -18,6 +18,7 @@ $gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
   justify-content: center;
   // align-items: center;
   padding-left: 30%;
+
   width: 100%;
 
   &:active{
@@ -83,4 +84,48 @@ $gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
   position: absolute;
   top: 30rem;
   left: 16rem;
+}
+
+.cardData {
+  position: absolute;
+  top: 18rem;
+  left: 9rem;
+  z-index: 999;
+  color: $white;
+  padding-left: 3rem;
+
+  h3 {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+  }
+
+  div {
+    display: flex;
+
+    h3 {
+      letter-spacing: 0.1rem;
+      font-size: 1rem;
+      margin-top: 0rem;
+      margin-right: 15rem;
+    }
+  }
+}
+
+.cardCvc {
+  position: absolute;
+  top: 36.5rem;
+  left: 41rem;
+  color: $white;
+}
+
+.cardLogo {
+  position: absolute;
+  top: 12rem;
+  left: 11rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    display: none;
+  }
 }
