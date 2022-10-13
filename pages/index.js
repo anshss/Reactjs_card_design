@@ -9,21 +9,27 @@ export default function Home() {
         expYY: "00",
         cvc: "000",
     });
+    
     return (
         <div className={styles.container}>
-            <img src="bg-main-desktop.png" alt="" />
-            <img src="bg-card-front.png" className={styles.cardFront} alt="" width="500px" height="275px" />
-            <img src="card-logo.svg" className={styles.cardLogo} alt="" width="90px" height="50px"/>
-            <img src="bg-card-back.png" className={styles.cardBack} alt="" width="500px" height="275px" />
-            <div className={styles.cardData}>
-              <h3>{details.number}</h3>
-              <div>
-                <h3>{details.name}</h3>
-                <h3>{details.expMM}/{details.expYY}</h3>
+            <img src="bg-main-desktop.png" className={styles.desktopBg} alt="" />
+            <img src="bg-main-mobile.png" className={styles.mobileBg} alt="" />
+            <div className={styles.cardFront}>
+              <img src="bg-card-front.png" alt="" width="500px" height="275px" />
+              <img src="card-logo.svg" className={styles.cardLogo} alt="" width="90px" height="50px"/>
+              <div className={styles.cardData}>
+                <h3>{details.number}</h3>
+                <div>
+                  <h3>{details.name}</h3>
+                  <h3>{details.expMM}/{details.expYY}</h3>
+                </div>
               </div>
             </div>
-            <div className={styles.cardCvc}>
-              <h3>{details.cvc}</h3>
+            <div className={styles.cardBack}>
+              <img src="bg-card-back.png" alt="" width="500px" height="275px" />
+              <div className={styles.cardCvc}>
+               <h3>{details.cvc}</h3>
+              </div>
             </div>
             <div className={styles.card}>
                 <h3>CARDHOLDER NAME</h3>
